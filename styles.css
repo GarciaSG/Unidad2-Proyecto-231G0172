@@ -101,7 +101,6 @@ section:not(.controles-superiores) {
     background: #ff8ba7;
 }
 
-/* ===== LISTA DE CANCIONES ===== */
 #listaCanciones {
     list-style: none;
     width: 100%;
