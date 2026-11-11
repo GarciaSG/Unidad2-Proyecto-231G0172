@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background: linear-gradient(135deg, #fdfbfb 0%, #fce8ef 100%);
+    min-height: 100vh;
+    color: #a3516e;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+header {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+header a {
+    background: #ffd1dc;
+    color: #a3516e;
+    text-decoration: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+header a:hover {
+    background: #fff;
+}
+
+.controles-superiores,
+section:not(.controles-superiores) {
+    width: 100%;
+    max-width: 500px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 20px;
+    border: 2px dashed #f8d4e1;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#inputBusqueda {
+    width: 100%;
+    background: #fff;
+    border: none;
+    border-radius: 12px;
+    padding: 1rem;
+    color: #a3516e;
+    font-size: 0.9rem;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    outline: none;
+}
+
+#inputBusqueda::placeholder {
+    color: #c48b9f;
+}
+
+#btnMezclar {
+    width: 100%;
+    background: #ff9ebc;
+    color: #fff;
+    border: none;
+    padding: 1rem;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 1rem;
+    font-family: 'Quicksand', sans-serif;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+#btnMezclar:hover {
+    background: #ff8ba7;
+}
+
+/* ===== LISTA DE CANCIONES ===== */
+#listaCanciones {
+    list-style: none;
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+#listaCanciones li {
+    background: #fff;
+    border: 1px solid #f8d4e1;
+    border-radius: 12px;
+    padding: 0.8rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+#listaCanciones li > span {
+    flex: 1;
+    font-size: 0.9rem;
+    font-weight: 600;
+    word-break: break-word;
+}
+
+#listaCanciones li > div {
+    display: flex;
+    gap: 0.3rem;
+}
+
+#listaCanciones li > div a {
+    width: 28px;
+    height: 28px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background: #fce8ef;
+    color: #c48b9f;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+#listaCanciones li > div a:hover {
+    background: #ffd1dc;
+    color: #a3516e;
+}
+
+section label {
+    font-size: 0.85rem;
+    font-weight: 700;
+    margin-left: 0.5rem;
+}
+
+section input[type="text"] {
+    background: #fff;
+    border: 1px solid #f8d4e1;
+    border-radius: 12px;
+    padding: 1rem;
+    color: #a3516e;
+    font-size: 0.9rem;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    outline: none;
+}
+
+section input[type="text"]:focus {
+    border-color: #ff9ebc;
+}
+
+#btnAgregar {
+    margin-top: 0.5rem;
+    background: #ff9ebc;
+    color: #fff;
+    border: none;
+    padding: 1rem;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 1rem;
+    font-family: 'Quicksand', sans-serif;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+#btnAgregar:hover {
+    background: #ff8ba7;
+}
